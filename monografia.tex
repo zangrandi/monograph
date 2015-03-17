@@ -1,0 +1,194 @@
+%-------------------------------- Configurações --------------------------------
+
+\documentclass[
+  a4paper,         % Tamanho do papel: A4
+	abntfigtabnum,
+  noindentfirst,
+	normaltoc,
+	pnumplain,
+	notimes
+	% capchap,
+]{abnt}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage[pdfborder={0 0 0}]{hyperref} % http://www.tug.org/applications/hyperref/manual.html
+\usepackage[alf]{abntcite}
+\usepackage{listings} % http://www.atscire.de/index.php?nav=products/listings2 http://linorg.usp.br/CTAN/macros/latex/contrib/listings/listings.pdf
+\usepackage{textcomp}
+\usepackage[usenames,dvipsnames]{xcolor} % http://en.wikibooks.org/wiki/LaTeX/Colors
+\usepackage[algoruled,longend]{algorithm2e}
+\usepackage{mathtools, mhsetup} % fórmulas matemáticas
+\usepackage[usenames,dvipsnames]{pstricks} % gerar os gráficos
+\usepackage{epsfig} % gerar os gráficos
+\usepackage{float} % dependência do H para posição
+\usepackage[all,cmtip]{xy}
+
+\urlstyle{same} % http://en.wikibooks.org/wiki/LaTeX/Hyperlinks#Customization
+
+%-------------------------------- Highligthing ---------------------------------
+
+\usepackage{color}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{dkorange}{rgb}{0.8,0.4,0}
+\definecolor{light-gray}{gray}{0.98}
+
+\lstset{
+  frame=tb,
+  language=Ruby,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=fullflexible,
+  basicstyle={\small\ttfamily},
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{dkgreen},
+  commentstyle=\color{gray},
+  stringstyle=\color{dkorange},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=2,
+  numbers=left,
+  stepnumber=1,    
+  firstnumber=1,
+  numberfirstline=true,
+  frame=tblr,
+  captionpos=b,
+  backgroundcolor=\color{light-gray},
+  aboveskip=20pt
+}
+
+\lstset{%
+        inputencoding=utf8,
+        extendedchars=true,
+        literate=%
+        {é}{{\'{e}}}1
+        {è}{{\`{e}}}1
+        {ê}{{\^{e}}}1
+        {ë}{{\¨{e}}}1
+        {É}{{\'{E}}}1
+        {Ê}{{\^{E}}}1
+        {û}{{\^{u}}}1
+        {ù}{{\`{u}}}1
+        {â}{{\^{a}}}1
+        {à}{{\`{a}}}1
+        {á}{{\'{a}}}1
+        {ã}{{\~{a}}}1
+        {Á}{{\'{A}}}1
+        {Â}{{\^{A}}}1
+        {Ã}{{\~{A}}}1
+        {ç}{{\c{c}}}1
+        {Ç}{{\c{C}}}1
+        {õ}{{\~{o}}}1
+        {ó}{{\'{o}}}1
+        {ô}{{\^{o}}}1
+        {Õ}{{\~{O}}}1
+        {Ó}{{\'{O}}}1
+        {Ô}{{\^{O}}}1
+        {î}{{\^{i}}}1
+        {Î}{{\^{I}}}1
+        {í}{{\'{i}}}1
+        {Í}{{\~{Í}}}1
+        {*}{{\char42}}1
+        {-}{{\char45}}1
+        {_}{{\char95}}1        
+}
+
+\numberwithin{figure}{chapter}%for tables
+\numberwithin{table}{chapter}%for tables
+\usepackage{sectsty}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{black}\footnotesize\bfseries}
+\DeclareCaptionFormat{listing}{\parbox{\textwidth}{#1#2#3}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+
+% Renomear listing e listings -> código e códigos
+\renewcommand*\lstlistingname{Código}
+\renewcommand*\lstlistlistingname{Lista de Códigos}
+
+
+%-----------------------------------
+
+\renewcommand{\capa}{
+\begin{titlepage}
+\espaco{1.1}
+
+\begin{center}
+	\textsc{\ABNTinstituicaodata}
+\end{center}
+
+\begin{center}
+	\textbf{\ABNTautordata}
+\end{center}
+
+\vspace{7.0cm}
+
+\begin{center}
+	\ABNTchapterfont\bfseries\LARGE\ABNTtitulodata\par
+%	\large\ABNTchapterfont\ABNTtitulodata\par
+\end{center}
+
+\vfill
+
+\begin{center}
+	\textbf{\ABNTlocaldata}\par
+	\textbf{\ABNTdatadata}
+\end{center}
+\end{titlepage}
+}% end of \capa
+
+
+
+%--------------------------------- Informações ---------------------------------
+
+\begin{document}
+\titulo{Detecção de Eventos com dados do Twitter}
+\autor{Augusto Zangrandi}
+\instituicao{Universidade Estadual do Norte Fluminense Darcy Ribeiro - UENF}
+\orientador[Orientador: ]{Luis Antônio Rivera Escriba.}
+\comentario{Monografia apresentada ao Curso de Graduação em Ciência da
+Computação da Universidade Estadual do Norte Fluminense Darcy Ribeiro como
+requisito para obtenção do título de Bacharel em Ciência da Computação, sob
+orientação do Profº. Luis Antônio Rivera Escriba.}
+\local{Campos dos Goytacazes/RJ}
+\data{2014}
+
+
+\capa
+\folhaderosto
+
+\include{tex/0-folha_de_aprovacao}
+\include{tex/0-epigrafe}
+\include{tex/0-agradecimentos}
+
+\sumario
+\listoffigures
+\listoftables
+
+\input{tex/0-resumo}
+\input{tex/0-abstract}
+
+%--------------------------------- Capítulos --------------------------------
+
+\include{tex/1-introducao}
+\include{tex/2-deteccao_eventos}
+\include{tex/3-processo}
+\include{tex/4-classificacao}
+\include{tex/5-implementacao}
+\include{tex/6-conclusao}
+\include{tex/7-apendice}
+
+%--------------------------------- Bibliografia --------------------------------
+
+\citeoption{abnt-repeated-author-omit=yes}
+\bibliographystyle{abnt-alf}
+\bibliography{bibliografia}
+
+\end{document}
+

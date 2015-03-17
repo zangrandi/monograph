@@ -1,0 +1,54 @@
+\select@language {brazil}
+\contentsline {chapter}{Lista de Figuras}{5}{chapter*.2}
+\contentsline {chapter}{Lista de Tabelas}{7}{chapter*.3}
+\contentsline {chapter}{Resumo}{8}{chapter*.4}
+\contentsline {chapter}{Abstract}{9}{chapter*.5}
+\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{10}{chapter.1}
+\contentsline {section}{\numberline {1.1}Metodologia}{12}{section.1.1}
+\contentsline {section}{\numberline {1.2}Objetivo}{13}{section.1.2}
+\contentsline {section}{\numberline {1.3}Organiza\IeC {\c c}\IeC {\~a}o}{13}{section.1.3}
+\contentsline {chapter}{\numberline {2}Detec\IeC {\c c}\IeC {\~a}o de eventos}{14}{chapter.2}
+\contentsline {subsection}{\numberline {2.0.1}Eventos e Sistemas}{15}{subsection.2.0.1}
+\contentsline {section}{\numberline {2.1}Sensores}{16}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Detec\IeC {\c c}\IeC {\~a}o de eventos em documentos de texto}{17}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Servi\IeC {\c c}os de redes sociais e sensores sociais}{18}{section.2.2}
+\contentsline {section}{\numberline {2.3}M\IeC {\'e}todos de detec\IeC {\c c}\IeC {\~a}o de eventos}{24}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}M\IeC {\'e}todos estat\IeC {\'\i }sticos}{24}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}M\IeC {\'e}todos probabil\IeC {\'\i }sticos}{25}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}M\IeC {\'e}todos de aprendizado de m\IeC {\'a}quina}{26}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Classifica\IeC {\c c}\IeC {\~a}o de texto}{26}{section.2.4}
+\contentsline {section}{\numberline {2.5}Trabalhos Relacionados}{28}{section.2.5}
+\contentsline {section}{\numberline {2.6}Discuss\IeC {\~a}o das t\IeC {\'e}cnicas}{31}{section.2.6}
+\contentsline {chapter}{\numberline {3}Detec\IeC {\c c}\IeC {\~a}o de eventos atrav\IeC {\'e}s do Twitter}{32}{chapter.3}
+\contentsline {section}{\numberline {3.1}Publica\IeC {\c c}\IeC {\~o}es como fonte de dados}{33}{section.3.1}
+\contentsline {section}{\numberline {3.2}Interfaces para obten\IeC {\c c}\IeC {\~a}o dos dados}{36}{section.3.2}
+\contentsline {section}{\numberline {3.3}Obten\IeC {\c c}\IeC {\~a}o dos dados}{39}{section.3.3}
+\contentsline {section}{\numberline {3.4}Modelo de espa\IeC {\c c}o vetorial}{41}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Tokeniza\IeC {\c c}\IeC {\~a}o}{42}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Pr\IeC {\'e}-processamento}{43}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Cria\IeC {\c c}\IeC {\~a}o do dicion\IeC {\'a}rio de termos}{44}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Cria\IeC {\c c}\IeC {\~a}o do vetor de caracter\IeC {\'\i }sticas}{45}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Extra\IeC {\c c}\IeC {\~a}o dos dados}{46}{section.3.5}
+\contentsline {chapter}{\numberline {4}M\IeC {\'a}quina de aprendizado}{48}{chapter.4}
+\contentsline {section}{\numberline {4.1}M\IeC {\'a}quina de vetores de suporte (SVM)}{50}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Problema de otimiza\IeC {\c c}\IeC {\~a}o}{51}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Representa\IeC {\c c}\IeC {\~a}o do conhecimento}{56}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Treinamento}{57}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Teste}{58}{subsection.4.2.2}
+\contentsline {chapter}{\numberline {5}Modelo implementado e resultados}{60}{chapter.5}
+\contentsline {section}{\numberline {5.1}Obten\IeC {\c c}\IeC {\~a}o de publica\IeC {\c c}\IeC {\~o}es via Search API}{61}{section.5.1}
+\contentsline {section}{\numberline {5.2}Convers\IeC {\~a}o para o modelo de espa\IeC {\c c}o vetorial}{65}{section.5.2}
+\contentsline {section}{\numberline {5.3}Classifica\IeC {\c c}\IeC {\~a}o com SVM}{72}{section.5.3}
+\contentsline {section}{\numberline {5.4}Resultados}{78}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}An\IeC {\'a}lise visual e ambiente}{79}{subsection.5.4.1}
+\contentsline {chapter}{\numberline {6}Conclus\IeC {\~a}o}{87}{chapter.6}
+\contentsline {section}{\numberline {6.1}Dificuldades}{88}{section.6.1}
+\contentsline {section}{\numberline {6.2}Trabalhos futuros}{88}{section.6.2}
+\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} C\IeC {\'o}digo do modelo}{89}{appendix.A}
+\contentsline {section}{\numberline {A.1}Classificador}{89}{section.A.1}
+\contentsline {section}{\numberline {A.2}Publica\IeC {\c c}\IeC {\~a}o}{90}{section.A.2}
+\contentsline {section}{\numberline {A.3}Treinador}{92}{section.A.3}
+\contentsline {section}{\numberline {A.4}Twitter}{93}{section.A.4}
+\contentsline {section}{\numberline {A.5}String}{94}{section.A.5}
+\contentsline {section}{\numberline {A.6}Modelo}{95}{section.A.6}
+\contentsline {chapter}{Refer\^encias}{96}{lstnumber.-26.8}

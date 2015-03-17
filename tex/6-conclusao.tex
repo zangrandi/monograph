@@ -1,0 +1,21 @@
+\chapter{Conclusão}
+
+Junto com outros trabalhos que obtiveram sucesso ao detectar outros eventos com dados do Twitter, como o de \citeonline{Sakaki2010}, que detecta terremotos e \citeonline{Mai2012}, que detecta acidentes de trânsito, o modelo implementado apresentou que é possível a detecção de manifestações através dos dados obtidos do serviço. Manifesação é um acontecimento com certa escala, de importância na vida das pessoas e que possui local e horário, o que possibilita a sua detecção, pois, os usuários ao tomarem conhecimento de uma manifestação, rapidamente publicam sobre ela, gerando picos de publicações que podem ser observados através dos gráficos de série-temporal.
+
+A classificação com SVM utilizou um conjunto de dados de treino do SVM de cerca de 1\% dos dados totais, e obteve cerca de 90\% de taxa de acerto, produzindo resultado relevante e permitindo que, a partir de uma pequena gama de amostras, o conjunto completo dos dados fosse classificado com baixa margem de erro. O ajuste do parâmetro $C$ apresentou comportamento esperado. Ao incrementá-lo ou decrementá-lo demais, a taxa de acerto diminuia, sendo necessário, através de testes sucessivos, encontrar um valor mediano que apresentasse o melhor resultado.
+
+Ao analisar os gráficos de série-temporal através do ambiente interativo, foi possível identificar as erupções repentinas de publicações, e que as mesmas dizem respeito à um ou mais evento específicos. Quando há um repentino surgimento de muitas publicações em determinada faixa de horário, elas geralmente possuem conteúdo convergente sobre um mesmo evento. Mostrando um motivo claro para a erupção de publicações: a ocorrência de um ou mais novos eventos.
+
+Através da análise do mapa de marcadores foi possível identificar, aproximadamente, a localização dos eventos através da posição dos marcadores no mapa e o seu agrupamento. Também identificou-se sobre qual evento as publicações estão se referindo, através da visualização das suas mensagens.
+
+\section{Dificuldades}
+
+A principal dificuldade encontrada durante a implementação detecção de eventos com dados do Twitter foi o limite de busca imposto pelo serviço. Inicialmente, era pretendido coletar publicações dentro de um período de dois anos, porém, o Twitter exibe a restrição de busca para publicações criadas apenas até uma semana. Com isso, a busca foi restrita ao mês de Agosto de 2014, sendo necessária a realização de várias buscas em datas diferentes e a concatenação dos resultados no mesmo arquivo.
+
+\section{Trabalhos futuros}
+
+O modelo implementado ainda não consegue estimar de forma automática se, em um determinado momento no tempo, está ocorrendo um evento ou não, ou seja, se a quantidade de publicações em determinada faixa de horário é normal ao funcionamento do sistema ou de fato anômala. 
+
+Isso seria possível através da implementação de um modelo probabilístico, que se encarregaria de analisar à qual tipo de distribuição probabilística os dados se enquadram. Seria feita então a comparação entre a distribuição e os dados reais obtidos. Caso haja divergência acima de uma limiar estabelecido, naquele momento estaria ocorrendo um evento.
+
+O modelo também ainda não estima a localização de um evento. Com implementação dos métodos de filtros de Kalman ou de particulas, seria possível, através das informações de localização das publicações, estimar o local de ocorrência de um evento. Essa estimativa, porém, possui a complexidade da determinação de quais publicações se referem ao evento em questão, pois é possível que, na mesma faixa de horário, haja a erupção de publicações sobre dois eventos distintos.

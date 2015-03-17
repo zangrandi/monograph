@@ -1,0 +1,47 @@
+\chapter{Introdução}
+
+A detecção de eventos é o processo de identificação de acontecimentos que fogem das regras normais de funcionamento de um sistema, ou de padrões de mudanças relevantes dentros dos mesmos. Segundo \citeonline{Wasson2006}, sistemas são:
+
+\begin{quote}
+	Um conjunto integrado de elementos interoperáveis, cada um com capacidade explicitamente especificadas e limitadas, que trabalham em sinergia para realizar o processamento de valor acrescentado para permitir que um usuário para satisfazer as necessidades operacionais orientadas para missões em um ambiente operacional prescrito com um resultado específico e probabilidade de sucesso.
+\end{quote}
+
+Sistemas incluem pessoas, peças, técnicas, processos, softwares, hardwares, etc, e podem ser reais ou virtuais (criados pelo homem). Para um sistema de monitoramento de temperatura de barras de ferro, por exemplo, um evento pode ser a temperatura da barra atingir um determinado valor. Para um sistema de monitoramento de tópicos em documentos de texto, um evento pode ser o repentino surgimento de documentos contendo um termo específico, o que identifica o surgimento de um novo tópico. Para cada implementação, o evento toma formas diferentes, de acordo com o interesse do agente implementador do sistema.
+
+Como parte do sistema, existem os sensores, que são os componentes que produzem diretamente as entradas para a detecção. As saídas dos sensores são os dados vindo diretamente da análise do ambiente - temperatura, velocidade, som, documentos de texto, etc - e servem como entrada para a detecção de eventos \citeonline{Sakaki2010}. Sensores incluem de temperatura, pressão, altitude, geolocalização, mas também incluem qualquer outro componente que gera as entradas do detector, como relatórios, publicações de notícias ou serviços redes sociais. 
+
+No caso de serviços redes sociais (SNS: Social Networking Services), um um usuário atua como um sensor, nesse caso sendo denominados como \textit{sensores sociais}. Os SNS são a principal forma com que pessoas se relacionam no ambiente virtual, neles são criadas, diaramente, milhões de publicações sobre os mais variados temas, o que tem chamado atenção acadêmica crescente nas áreas de mineração de dados, detecção de tópicos, detecção de eventos, etc. Dentre os SNS mais populares, está o Twitter, com sua base de 500 milhões de usuários e publicações com o limite de 140 caracteres, os usuários do serviço produzem uma imensa quantidade de informações. O limite permite com que as informações sejam trocadas de forma mais dinâmica, se aproximando ainda mais do tempo real dos acontecimentos do mundo. O dinanismo favorece a sua troca, produzindo redes que obtem e repassam as informações rapidamente. O usuário, nesse contexto, atua como um sensor dos eventos do mundo real, produzindo informações que podem ser utilizadas para detectá-los.
+
+Exitem vários modelos matemáticos utilizados para a detecção de eventos, sendo os principais deles: métodos estatísticos, métodos probabilísticos e métodos de aprendizado de máquina. Os métodos estatísticos consistem, basicamente, na análise dos dados vindos dos sensores e na criação de um modelo estatístico para eles. Através da comparação entre os dados reais e o modelo estatístico, é possível indicar se em determinado momento, ocorre um evento fora do padrão ou não, através da diferença entre os valores esperados e reais. Os métodos probabísticos, consistem na criação de modelos probabilísticos para indicarem, a partir dos dados estatísticos, qual a probabilidade de ocorrer um evento em determinado momento. Enquanto os métodos de aprendizado de máquina analisam os padrões existentes em um conjunto de dados vindos dos sensores para determinar o funcionamento geral do sistema. São geralmente aplicados em dados esparsos e em sistemas que necessitam alta performance computacional.
+
+Muitos estudos foram dedicados à detecção de eventos e ao Twitter. \citeonline{Becker2011} estudaram métodos de análise para detectar publicações do Twitter que estão relacionadas à eventos dos mundo real. \citeonline{Takahashi2011} e \citeonline{Sakaki2010} Outros trabalhos obtiveram sucesso ao utilizar sensores sociais para a detecção de eventos variados. \citeonline{Sakaki2010} desenvolve um algoritmo que detecta eventos de terremotos no Japão, superando o índice de acerto do orgão de meteorologia japonês Japan Meteorology Agency (JMA). Enquanto \citeonline{Takahashi2011} utiliza o Twitter como forma de detectar eventos de rinite alérgia no Japão.
+
+\section{Metodologia}
+
+O modelo implementado utiliza a detecção de eventos aplicada ao contexto do serviço de microblog \textit{Twitter}. O modelo utiliza sua interface de aplicação \textit{Search API} para realizar a busca por publicações criadas por seus usuários. As publicações são salvas localmente em um arquivo estruturado com dados como horário, geolocalização e cidade.
+
+Muitas publicações, porém, mesmo contendo a palavra-chave buscada, podem não dizer respeito ao evento específico que se deseja detectar. É preciso, então, a aplicação de métodos que classifiquem essas publicações em relevantes para a análise ou não. Um dos métodos, é o método de aprendizado de máquina \textit{máquina de vetores de suporte} (SVM: \textit{Support Vector Machine}). O SVM irá analisar e identificar padrões a partir de um conjunto de publicações previamente classificadas e, então, gerar as classificações das novas publicações analisadas.
+
+Para a detecção das publicações relevantes com SVM, é preciso que as mesmas sejam convertidas para o seu \textit{modelo de espaço vetorial}, que consiste no processo de transformação de dados para o seu vetor de características. O processo de conversão de documentos de texto consiste na tokenização, pré-processamento, a criação do dicionário de termos e do vetor de características.
+
+Após a conversão, os documentos são inseridos como entrada para o SVM, que irá distribuir os seus vetores e, a partir da semelhança de suas características, determinar em qual classe cada dado se encontra. O processo de classifição com SVM é divido em três etapas: treino, teste e classificação. Na fase de treino, são selecionadas algumas publicações e classificadas manualmente para alimentar o conhecimento do SVM. Na fase de teste, uma outra gama de publicações é selecionada e o SVM executado para fazer o comparativo entre as suas saídas e as classificações manuais: assim determina-se a taxa de acerto do SVM. Com uma taxa de acerto aceitável, o SVM está apto à fase de classificação, na qual classifica-se o total de publicações obtida do Twitter.
+
+Após a classificação das publicações, as mesmas tem as informações do horário e localização extraídas, para que os eventos sejam análisados visualmente através de gráficos de série-temporal e do mapa de marcadores de geolocalização.
+
+\section{Objetivo}
+
+Através deste trabalho, pretende-se desenvolvedor um modelo de detecção de eventos através do Twitter. O modelo utiliza o modelo de aprendizado de máquina SVM e a ajuda de gráficos de série-temporal interativos para detectar erupções anômalas de publicações, o que, na prática, determina a ocorrência de um evento. O modelo utiliza como exemplo de evento, manifestações que ocorrem no território brasileiro entre o período de 01 de agosto e 31 de agosto de 2014.
+
+\section{Organização}
+
+O trabalho está organizado da seguinte forma:
+
+No Capítulo 2 são apresentadas as técnicas e conceitos relacionadps com detecção de eventos: a definição de eventos e sistemas, o que são sensores e qual a sua utilização para a detecção, a detecção de eventos em serviços de redes sociais, o que são serviços redes sociais, como o Twitter pode ser um meio para a aplicação da detecção e o que são sensores sociais, além de modelos matemáticos utilizados para a implementação da detecção de eventos e trabalhos relacionados.
+
+No Capítulo 3 é demonstrado o modelo implementado: como estão estruturadas as publicações criadas por usuários no Twitter e como é feita a aquisição desses dados através das interfaces de aplicação, são explicados detalhes do processo de conversão do texto da publicação para o modelo de espaço vetorial, além de como esses dados são posteriormente agrupados.
+
+No Capítulo 4 é apresentado o processo de classificação das publicações através do SVM: o SVM como uma máquina de aprendizado supervisionado, seu modelo de otimização matemático e o que é um SVM de margem suave, assim como o processo de representação de conhecimento possuindo treino e teste e a fase de classificação em si.
+
+No Capítulo 5 demonstra-se como foi feita a implementação do modelo, quais tecnologias foram utilizadas, assim como os resultados obtidos e o ambiente virtual criado para analisar os eventos.
+
+No Capítulo 6 são encontradas a conclusão do trabalho, bem como dificuldades encontradas e trabalhos futuros propostos.

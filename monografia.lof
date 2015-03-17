@@ -1,0 +1,35 @@
+\select@language {brazil}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces O usu\IeC {\'a}rio como sensor de eventos do mundo real.\relax }}{21}{figure.caption.6}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces P\IeC {\'a}gina principal do Twitter: linha do tempo.\relax }}{22}{figure.caption.8}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Modelo de regress\IeC {\~a}o linear.\relax }}{25}{figure.caption.11}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Classifica\IeC {\c c}\IeC {\~a}o de um SVM: maior margem poss\IeC {\'\i }vel entre os dois grupos.\relax }}{27}{figure.caption.12}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Processo de detec\IeC {\c c}\IeC {\~a}o para o detector de eventos proposto.\relax }}{34}{figure.caption.13}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Funcionamento da REST API do Twitter.\relax }}{37}{figure.caption.15}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Funcionamento da Streaming API do Twitter.\relax }}{39}{figure.caption.19}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Processo de convers\IeC {\~a}o para o modelo de espa\IeC {\c c}o vetorial.\relax }}{42}{figure.caption.21}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Tokeniza\IeC {\c c}\IeC {\~a}o de duas publica\IeC {\c c}\IeC {\~o}es.\relax }}{43}{figure.caption.22}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Pr\IeC {\'e}-processamento de duas publica\IeC {\c c}\IeC {\~o}es.\relax }}{44}{figure.caption.23}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Dicion\IeC {\'a}rio de termos de duas publica\IeC {\c c}\IeC {\~o}es.\relax }}{44}{figure.caption.24}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Cria\IeC {\c c}\IeC {\~a}o do modelo de caracter\IeC {\'\i }sticas de duas publica\IeC {\c c}\IeC {\~o}es.\relax }}{45}{figure.caption.25}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces \IeC {\'A}rvore de decis\IeC {\~a}o para extra\IeC {\c c}\IeC {\~a}o da localiza\IeC {\c c}\IeC {\~a}o da publica\IeC {\c c}\IeC {\~a}o.\relax }}{47}{figure.caption.26}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o vetorial do espa\IeC {\c c}o de documentos. \cite {Salton1975}\relax }}{50}{figure.caption.27}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Planos poss\IeC {\'\i }veis para divis\IeC {\~a}o de duas classes de dados.\relax }}{51}{figure.caption.28}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Planos no limiar dos pontos.\relax }}{52}{figure.caption.29}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Margem entre os planos.\relax }}{53}{figure.caption.30}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Plano de maior margem que ignorando certos pontos.\relax }}{54}{figure.caption.31}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Valores para $\xi $.\relax }}{55}{figure.caption.33}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Um conjunto de dados no ${R}^{2}$ (n\IeC {\~a}o separ\IeC {\'a}veis) transormados para ${R}^{3}$ (separ\IeC {\'a}veis) pela fun\IeC {\c c}\IeC {\~a}o de kernel $[{x}_{1}, {x}_{2}] = [{x}_{1}, {x}_{2}, {x_1}^{2} + {x_2}^{2}]$ \cite {Kim2013}.\relax }}{56}{figure.caption.35}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Treino do SVM.\relax }}{57}{figure.caption.36}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Convers\IeC {\~a}o para o modelo de espa\IeC {\c c}o vetorial.\relax }}{66}{figure.caption.39}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Cria\IeC {\c c}\IeC {\~a}o da express\IeC {\~a}o regular.\relax }}{67}{figure.caption.41}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces C\IeC {\'a}lculo de $w$ e $b$ a partir dos descritores e $C$\relax }}{75}{figure.caption.47}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Obten\IeC {\c c}\IeC {\~a}o da classe ${y}_{i}$ atrav\IeC {\'e}s do fornecimento do vetor ${x}_{i}$\relax }}{76}{figure.caption.49}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Publica\IeC {\c c}\IeC {\~o}es do m\IeC {\^e}s de agosto.\relax }}{80}{figure.caption.55}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Publica\IeC {\c c}\IeC {\~o}es do dia 20 de agosto.\relax }}{81}{figure.caption.56}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Mapa de marcadores para o hor\IeC {\'a}rio entre 06h e 07h do dia 20/08.\relax }}{82}{figure.caption.58}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Concentra\IeC {\c c}\IeC {\~a}o de publica\IeC {\c c}\IeC {\~o}es em S\IeC {\~a}o Paulo.\relax }}{83}{figure.caption.59}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Publica\IeC {\c c}\IeC {\~o}es \IeC {\'u}nicas em S\IeC {\~a}o Paulo.\relax }}{84}{figure.caption.60}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Agrupamentos de publica\IeC {\c c}\IeC {\~o}es em Minas Gerais e S\IeC {\~a}o Paulo.\relax }}{84}{figure.caption.61}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Mensagem de uma publica\IeC {\c c}\IeC {\~a}o.\relax }}{85}{figure.caption.62}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Manifesta\IeC {\c c}\IeC {\~a}o na rodovia MG-040, em Minas Gerais.\relax }}{85}{figure.caption.63}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Manifesta\IeC {\c c}\IeC {\~a}o na Avenida Paulista, em S\IeC {\~a}o Paulo.\relax }}{86}{figure.caption.64}

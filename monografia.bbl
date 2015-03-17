@@ -1,0 +1,309 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.45.2.1 }
+
+\bibitem[24765:2010(E) 2010]{ISOIEC24765}
+\abntrefinfo{24765:2010(E)}{24765:2010(E)}{2010}
+{24765:2010(E), I. \emph{Systems and software engineering — Vocabulary}.
+Geneva, Switzerland, 2010.}
+
+\bibitem[Abou-Zleikha et al. 2014]{Zleikha2014}
+\abntrefinfo{Abou-Zleikha et al.}{ABOU-ZLEIKHA et al.}{2014}
+{ABOU-ZLEIKHA, M. et al. Non-linguistic vocal event detection using online
+  random forest. In:  \emph{Information and Communication Technology,
+  Electronics and Microelectronics (MIPRO), 2014 37th International Convention
+  on}. [S.l.: s.n.], 2014. p. 1326--1330.}
+
+\bibitem[Adedoyin-Olowe, Gaber e Stahl 2013]{Olowe2014}
+\abntrefinfo{Adedoyin-Olowe, Gaber e Stahl}{ADEDOYIN-OLOWE; GABER; STAHL}{2013}
+{ADEDOYIN-OLOWE, M.; GABER, M.~M.; STAHL, F. A survey of data mining techniques
+  for social media analysis.
+\emph{CoRR}, abs/1312.4617, 2013.}
+
+\bibitem[Aggarwal e Zhai 2012]{Aggarwal2012}
+\abntrefinfo{Aggarwal e Zhai}{AGGARWAL; ZHAI}{2012}
+{AGGARWAL, C.~C.; ZHAI, C. A survey of text classification algorithms.
+Springer US, p. 162 -- 222, 2012.}
+
+\bibitem[Aiello et al. 2013]{Aiello2013}
+\abntrefinfo{Aiello et al.}{AIELLO et al.}{2013}
+{AIELLO, L.~M. et al. Sensing trending topics in twitter.
+IEEE, 2013.}
+
+\bibitem[Ali e Smith 2005]{Ali2005}
+\abntrefinfo{Ali e Smith}{ALI; SMITH}{2005}
+{ALI, S.; SMITH, K.~A. Kernal width selection for svm classification: A
+  meta-learning approach.
+\emph{International Journal of Data Warehousing and Mining}, IGI Publishing,
+  v.~1, 2005.}
+
+\bibitem[Allen e Ferguson 1994]{Allen1994}
+\abntrefinfo{Allen e Ferguson}{ALLEN; FERGUSON}{1994}
+{ALLEN, J.~F.; FERGUSON, G. Action and events in temporal logic.
+\emph{Journal of Logic and Computation}, Oxford Journals, v.~4, p. 531 -- 579,
+  1994.}
+
+\bibitem[Becker, Naaman e Gravano 2011]{Becker2011}
+\abntrefinfo{Becker, Naaman e Gravano}{BECKER; NAAMAN; GRAVANO}{2011}
+{BECKER, H.; NAAMAN, M.; GRAVANO, L. Beyond trending topics: Real-world event
+  identification on twitter.
+\emph{Fifth International AAAI Conference on Weblogs and Social Media},
+  Association for the Advancement of Artificial Intelligence, 2011.}
+
+\bibitem[Begoli e Horey 2012]{Begoli2012}
+\abntrefinfo{Begoli e Horey}{BEGOLI; HOREY}{2012}
+{BEGOLI, E.; HOREY, J. Design principles for effective knowledge discovery from
+  big data. In:  \emph{Software Architecture (WICSA) and European Conference on
+  Software Architecture (ECSA), 2012 Joint Working IEEE/IFIP Conference on}.
+  [S.l.: s.n.], 2012. p. 215--218.}
+
+\bibitem[Benevenuto et al. 2010]{Benevenuto2010}
+\abntrefinfo{Benevenuto et al.}{BENEVENUTO et al.}{2010}
+{BENEVENUTO, F. et al. Detecting spammers on twitter.
+CEAS, 2010.}
+
+\bibitem[Chapelle et al. 2002]{Chapelle2002}
+\abntrefinfo{Chapelle et al.}{CHAPELLE et al.}{2002}
+{CHAPELLE, O. et al. Choosing multiple parameters for support vector machines.
+\emph{Machine Learning}, Kluwer Academic Publishers, v.~46, n.~1-3, p.
+  131--159, 2002.
+ISSN 0885-6125.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/dx\-.doi\-.org\-/10\-.1023\-/A\%3A1012450327387$>$}{http://dx.doi.org/10.1023/A\%3A1012450327387}.}
+
+\bibitem[Cook e Thomas 2005]{Thomas2005}
+\abntrefinfo{Cook e Thomas}{COOK; THOMAS}{2005}
+{COOK, K.~A.; THOMAS, J.~J. \emph{Illuminating the Path: The Research and
+  Development Agenda for Visual Analytics}. [S.l.]: Pacific Northwest National
+  Laboratory, 2005.}
+
+\bibitem[Cox e Plale 2011]{Cox2011}
+\abntrefinfo{Cox e Plale}{COX; PLALE}{2011}
+{COX, J.; PLALE, B. Improving automatic weather observations with the public
+  twitter stream.
+\emph{IU School of Informatics and Computing}, Indiana University, 2011.}
+
+\bibitem[Dong et al. 2014]{Dong2014}
+\abntrefinfo{Dong et al.}{DONG et al.}{2014}
+{DONG, X. et al. Multiscale event detection in social media.
+\emph{CoRR}, abs/1404.7048, 2014.}
+
+\bibitem[Fienberg e Shmueli 2005]{Fienberg2005}
+\abntrefinfo{Fienberg e Shmueli}{FIENBERG; SHMUELI}{2005}
+{FIENBERG, S.~E.; SHMUELI, G. Statistical issues and challenges associated with
+  rapid detection of bio-terrorist attacks.
+John Wiley and Sons, 2005.}
+
+\bibitem[Gao et al. 2014]{Gao2014}
+\abntrefinfo{Gao et al.}{GAO et al.}{2014}
+{GAO, D. et al. Sequential summarization: A full view of twitter trending
+  topics.
+\emph{Audio, Speech, and Language Processing, IEEE/ACM Transactions on}, v.~22,
+  n.~2, p. 293--302, Fevereiro 2014.
+ISSN 2329-9290.}
+
+\bibitem[Go, Bhayani e Huang 2009]{Go2009}
+\abntrefinfo{Go, Bhayani e Huang}{GO; BHAYANI; HUANG}{2009}
+{GO, A.; BHAYANI, R.; HUANG, L. Twitter sentiment classification using distant
+  supervision.
+\emph{CS224N Project Report}, Stanford University, 2009.}
+
+\bibitem[Grigorik 2008]{Grigorik2008}
+\abntrefinfo{Grigorik}{GRIGORIK}{2008}
+{GRIGORIK, I. \emph{Support Vector Machines (SVM) in Ruby}. 2008.
+Dispon{\'\i}vel em:
+  $<$https:\-/\-/www\-.igvita\-.com\-/2008\-/01\-/07\-/support-vector-machines-svm-in-ruby\-/$>$.
+  Acesso em: 30/06/2014.}
+
+\bibitem[Gupchup et al. 2009]{Gupchup2009}
+\abntrefinfo{Gupchup et al.}{GUPCHUP et al.}{2009}
+{GUPCHUP, J. et al. Model-based event detection in wireless sensor networks.
+\emph{CoRR}, abs/0901.3923, 2009.}
+
+\bibitem[Hong, Liu e Govindarasu 2014]{Hong2014}
+\abntrefinfo{Hong, Liu e Govindarasu}{HONG; LIU; GOVINDARASU}{2014}
+{HONG, J.; LIU, C.-C.; GOVINDARASU, M. Detection of cyber intrusions using
+  network-based multicast messages for substation automation. In:
+  \emph{Innovative Smart Grid Technologies Conference (ISGT), 2014 IEEE PES}.
+  [S.l.: s.n.], 2014. p.~1--5.}
+
+\bibitem[Ihler, Hutchins e Smyth 2006]{Ihler2006}
+\abntrefinfo{Ihler, Hutchins e Smyth}{IHLER; HUTCHINS; SMYTH}{2006}
+{IHLER, A.; HUTCHINS, J.; SMYTH, P. Adaptive event detection with time-varying
+  poisson processes. In:  \emph{Proceedings of the 12th ACM SIGKDD
+  International Conference on Knowledge Discovery and Data Mining}. New York,
+  NY, USA: ACM, 2006.  (KDD '06), p. 207--216.
+ISBN 1-59593-339-5.}
+
+\bibitem[Iwakura e Okamoto 2008]{Iwakura2008}
+\abntrefinfo{Iwakura e Okamoto}{IWAKURA; OKAMOTO}{2008}
+{IWAKURA, T.; OKAMOTO, S. A fast boosting-based learner for feature-rich
+  tagging and chunking.
+\emph{Proceedings of the Twelfth Conference on Computational Natural Language
+  Learning}, Association for Computational Linguistics, p. 17 -- 24, 2008.}
+
+\bibitem[Jansen et al. 2009]{Jansen2009}
+\abntrefinfo{Jansen et al.}{JANSEN et al.}{2009}
+{JANSEN, B.~J. et al. Twitter power: Tweets as electronic word of mouth.
+\emph{Journal of the American Society for Information Science and Technology},
+  ASIS and T, 2009.}
+
+\bibitem[Java et al. 2007]{Java2007}
+\abntrefinfo{Java et al.}{JAVA et al.}{2007}
+{JAVA, A. et al. Why we twitter: Understanding microblogging usage and
+  communities.
+\emph{9th WebKDD and 1st SNA-KDD 2007 workshop on Web mining and social network
+  analysis}, ACM, 2007.}
+
+\bibitem[Jiang, Blumberg e Buttrey 2009]{Jiang2009}
+\abntrefinfo{Jiang, Blumberg e Buttrey}{JIANG; BLUMBERG; BUTTREY}{2009}
+{JIANG, W.; BLUMBERG, A.~F.; BUTTREY, S.~E. Event detection challenges,
+  methods, and applications in natural and artificial systems.
+\emph{14th ICCRTS: “C2 and Agility”}, Lockheed Martin MS2, 2009.}
+
+\bibitem[Joachims 1998]{Joachims1998}
+\abntrefinfo{Joachims}{JOACHIMS}{1998}
+{JOACHIMS, T. Text categorization with support vector machines: Learning with
+  many relevant features.
+\emph{Machine Learning: ECML-98}, Springer Berlin Heidelberg, p. 137 -- 142,
+  1998.}
+
+\bibitem[Kelly 2009]{PearAnalytics2009}
+\abntrefinfo{Kelly}{KELLY}{2009}
+{KELLY, R. \emph{Twitter Study Reveals Interesting Results About Usage – 40%
+  is Pointless Babble}. 2009.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.pearanalytics\-.com\-/blog\-/2009\-/twitter-study-reveals-interesting-results-40-percent-pointless-babble\-/$>$}{http://www.pearanalytics.com/blog/2009/twitter-study-reveals-interesting-results-40-percent-pointless-babble/}.
+  Acesso em: 25/03/2014.}
+
+\bibitem[Kim 2013]{Kim2013}
+\abntrefinfo{Kim}{KIM}{2013}
+{KIM, E. \emph{Everything You Wanted to Know about the Kernel Trick}. Setembro
+  2013.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.eric-kim\-.net\-/eric-kim-net\-/posts\-/1\-/kernel\underline{\
+  }trick\-.html$>$}{http://www.eric-kim.net/eric-kim-net/posts/1/kernel_trick.html}.
+  Acesso em: 05/08/2014.}
+
+\bibitem[Liu, Jiang e Heer 2013]{Zhicheng2013}
+\abntrefinfo{Liu, Jiang e Heer}{LIU; JIANG; HEER}{2013}
+{LIU, Z.; JIANG, B.; HEER, J. immens: Real-time visual querying of big data.
+\emph{Computer Graphics Forum}, Blackwell Publishing Ltd., v.~32, n.~3pt4, p.
+  421--430, 2013.}
+
+\bibitem[Mai e Hranac 2012]{Mai2012}
+\abntrefinfo{Mai e Hranac}{MAI; HRANAC}{2012}
+{MAI, E.; HRANAC, R. Twitter interactions as a data source for transportation
+  incidents.
+\emph{TRB 2013 Annual Meeting}, TRB, 2012.}
+
+\bibitem[Matuszka, Vinceller e Laki 2013]{Matuszka2013}
+\abntrefinfo{Matuszka, Vinceller e Laki}{MATUSZKA; VINCELLER; LAKI}{2013}
+{MATUSZKA, T.; VINCELLER, Z.; LAKI, S. On a keyword-lifecycle model for
+  real-time event detection in social network data. In:  \emph{Cognitive
+  Infocommunications (CogInfoCom), 2013 IEEE 4th International Conference on}.
+  [S.l.: s.n.], 2013. p. 453--458.}
+
+\bibitem[Megri e Naqa 2014]{Megri2014}
+\abntrefinfo{Megri e Naqa}{MEGRI; NAQA}{2014}
+{MEGRI, A.~C.; NAQA, I.~E. Prediction of the thermal comfort indices using
+  improved support vector machine classifiers and nonlinear kernel functions.
+\emph{Indoor and Built Environment}, 2014.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/ibe\-.sagepub\-.com\-/content\-/early\-/2014\-/07\-/11\-/1420326X14539693\-.abstract$>$}{http://ibe.sagepub.com/content/early/2014/07/11/1420326X14539693.abstract}.}
+
+\bibitem[Ozer, Chen e Cirpan 2011]{Ozer2013}
+\abntrefinfo{Ozer, Chen e Cirpan}{OZER; CHEN; CIRPAN}{2011}
+{OZER, S.; CHEN, C.~H.; CIRPAN, H.~A. A set of new chebyshev kernel functions
+  for support vector machine pattern classification.
+\emph{Pattern Recognition}, v.~44, n.~7, p. 1435 -- 1447, 2011.
+ISSN 0031-3203.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.sciencedirect\-.com\-/science\-/article\-/pii\-/S0031320311000021$>$}{http://www.sciencedirect.com/science/article/pii/S0031320311000021}.}
+
+\bibitem[Pak e Paroubek 2010]{Pak2010}
+\abntrefinfo{Pak e Paroubek}{PAK; PAROUBEK}{2010}
+{PAK, A.; PAROUBEK, P. Twitter as a corpus for sentiment analysis and opinion
+  mining.
+LREC, 2010.}
+
+\bibitem[Sakaki, Okazaki e Matsuo 2010]{Sakaki2010}
+\abntrefinfo{Sakaki, Okazaki e Matsuo}{SAKAKI; OKAZAKI; MATSUO}{2010}
+{SAKAKI, T.; OKAZAKI, M.; MATSUO, Y. Earthquake shakes twitter users: Real-time
+  event detection by social sensors.
+2010.}
+
+\bibitem[Salton, Wong e Yang 1975]{Salton1975}
+\abntrefinfo{Salton, Wong e Yang}{SALTON; WONG; YANG}{1975}
+{SALTON, G.; WONG, A.; YANG, C.~S. A vector space model for automatic indexing.
+Communications of the ACM, v.~18, p. 613 -- 620, 1975.}
+
+\bibitem[Santos et al. 2010]{Santos2010}
+\abntrefinfo{Santos et al.}{SANTOS et al.}{2010}
+{SANTOS, L.~M. et al. Twitter, análise de sentimento e desenvolvimento de
+  produtos: Quanto os usuários estão expressando suas opiniões?
+Prisma.com, n.~13, 2010.}
+
+\bibitem[Soule, Salamantian e Taft 2005]{Soule2005}
+\abntrefinfo{Soule, Salamantian e Taft}{SOULE; SALAMANTIAN; TAFT}{2005}
+{SOULE, A.; SALAMANTIAN, K.; TAFT, N. Combining filtering and statistical
+  methods for anomaly detection.
+\emph{Internet Measurement Conference}, USENIX Association, p. 331 -- 344,
+  2005.}
+
+\bibitem[Stankovic, Rowe e Laublet 2010]{Stankovic2010}
+\abntrefinfo{Stankovic, Rowe e Laublet}{STANKOVIC; ROWE; LAUBLET}{2010}
+{STANKOVIC, M.; ROWE, M.; LAUBLET, P. Mapping tweets to conference talks: A
+  goldmine for semantics.
+\emph{Social Data on the Web Workshop at the International Semantic Web
+  Conference}, Shanghai, China, 2010.}
+
+\bibitem[Takahashi, Abe e Igata 2011]{Takahashi2011}
+\abntrefinfo{Takahashi, Abe e Igata}{TAKAHASHI; ABE; IGATA}{2011}
+{TAKAHASHI, T.; ABE, S.; IGATA, N. Can twitter be an alternative of real-world
+  sensors?
+\emph{Human-Computer Interaction, Part III}, Springer-Verlag Berlin Heidelberg,
+  p. 240 -- 249, 2011.}
+
+\bibitem[Tumasjan et al. 2010]{Tumasjan2010}
+\abntrefinfo{Tumasjan et al.}{TUMASJAN et al.}{2010}
+{TUMASJAN, A. et al. Predicting elections with twitter: What 140 characters
+  reveal about political sentiment.
+Association for the Advancement of Artificial Intelligence, Munich, Germany,
+  2010.}
+
+\bibitem[Turney e Pantel 2010]{Turney2010}
+\abntrefinfo{Turney e Pantel}{TURNEY; PANTEL}{2010}
+{TURNEY, P.~D.; PANTEL, P. From frequency to meaning: Vector space models of
+  semantics.
+\emph{Journal of artificial intelligence research}, AI Access Foundation and
+  National Research Council Canada, p. 141--188, 2010.}
+
+\bibitem[Wang et al. 2013]{Wang2013}
+\abntrefinfo{Wang et al.}{WANG et al.}{2013}
+{WANG, X. et al. Real time event detection in twitter.
+\emph{14th International Conference, WAIM}, Springer-Verlag Berlin Heidelberg,
+  p. 502 -- 513, 2013.}
+
+\bibitem[Wasson 2006]{Wasson2006}
+\abntrefinfo{Wasson}{WASSON}{2006}
+{WASSON, C.~S. \emph{System Analysis, Design, and Development}. [S.l.]: John
+  Wiley and Sons, Inc., 2006.}
+
+\bibitem[Weng e Lee 2011]{Weng2011}
+\abntrefinfo{Weng e Lee}{WENG; LEE}{2011}
+{WENG, J.; LEE, B.-S. Event detection in twitter.
+\emph{Fifth International AAAI Conference on Weblogs and Social Media},
+  Association for the Advancement of Artificial Intelligence, 2011.}
+
+\bibitem[Yang, Pierce e Carbonell 1998]{Yang1998}
+\abntrefinfo{Yang, Pierce e Carbonell}{YANG; PIERCE; CARBONELL}{1998}
+{YANG, Y.; PIERCE, T.; CARBONELL, J. A study on retrospective and on-line
+  event.
+\emph{ACM SIGIR conference on Research and development in information
+  retrieval}, ACM, New York, NY, USA, p. 28 -- 36, 1998.}
+
+\end{thebibliography}

@@ -1,0 +1,233 @@
+\appendix
+
+\chapter{Código do modelo}
+
+\section{Classificador}
+
+Classe utilizada as ações referentes à classificação das publicações.
+
+\begin{lstlisting}
+	require 'csv'
+	require 'libsvm'
+
+	class Classificador
+		attr_reader :problema, :parametro, :termos_excecao, :treinador, :modelo, :publicacoes
+
+		def initialize
+			@problema = Libsvm::Problem.new
+			@parametro = Libsvm::SvmParameter.new
+			@treinador = Treinador.new
+			@publicacoes = []
+			inicializa_parametros
+		end
+
+		def inicializa_parametros
+			@parametro.c = 0.1
+			@parametro.cache_size = 1
+			@parametro.eps = 0.001
+		end
+
+		def carregar_publicacoes_de_treino caminho
+			@treinador.carregar_publicacoes_de_treino caminho
+		end
+
+		def definir_modelo
+			@problema.set_examples(@treinador.classes, @treinador.vetores_de_treino)
+			@modelo = Libsvm::Model.train(@problema, @parametro)
+		end
+
+		def carregar_publicacoes caminho
+			CSV.open(caminho) do |csv|
+				csv.each do |linha|
+					@publicacoes << Publicacao.new(linha, @treinador)
+				end
+			end
+		end
+
+		def testar_modelo caminho_saida
+			definir_modelo
+			CSV.open(caminho_saida, "w") do |csv|
+				@publicacoes.each do |publicacao|
+					linha_csv = publicacao.linha_csv
+					classe = @modelo.predict(publicacao.vetor)
+					linha_csv[6] = classe
+					linha_csv[7] = publicacao.cidade
+					linha_csv[8] = publicacao.estado
+					csv << linha_csv
+				end
+			end
+		end
+	end
+\end{lstlisting}
+
+\section{Publicação}
+
+Classe utilizada para extração das informações das publicações como: termos, vetor de características, cidade e estado.
+
+\begin{lstlisting}
+	class Publicacao
+	  attr_reader :termos, :vetor, :linha_csv, :texto, :horario, :latitude, 
+	  	:longitude, :cidade, :localizacao_no_perfil
+
+		def initialize linha, treinador = nil
+			@linha_csv = linha
+			@id = @linha_csv[0]
+			@horario = @linha_csv[1]
+			@texto = @linha_csv[2]
+			@latitude = @linha_csv[3]
+			@longitude = @linha_csv[4]
+			@localizacao_no_perfil = @linha_csv[5]
+			@treinador = treinador
+			@termos = @texto.tokenizar
+			@cidade = extrair_cidade
+		end
+
+		def extrair_cidade
+			cidade = ""
+			@termos.each do |termo|
+				if String::LISTA_DE_CIDADES.include?(termo)
+					cidade = termo
+				end
+			end
+			if cidade == "" && @localizacao_no_perfil
+				@localizacao_no_perfil.tokenizar.each do |termo|
+					if String::LISTA_DE_CIDADES.include?(termo)
+						cidade = termo
+					end
+				end
+			end
+			cidade
+		end
+
+		def estado
+			String::ESTADOS_E_CIDADES[@cidade]
+		end
+
+		def vetor
+			if @treinador
+				vetor = @treinador.dicionario_de_termos.map do |termo| 
+					@termos.include?(termo) ? 1 : 0
+				end
+				Libsvm::Node.features(vetor)
+			end
+		end
+	end
+\end{lstlisting}
+
+\section{Treinador}
+
+Classe utilizada para a fase de treinamento do classificador e criação do dicionário de termos.
+
+\begin{lstlisting}
+	class Treinador
+		attr_reader :publicacoes_de_treino, :publicacoes_de_teste, :dicionario_de_termos
+
+		def initialize
+			@publicacoes_de_treino = []
+		end
+
+		def carregar_publicacoes_de_treino caminho
+			CSV.open(caminho) do |csv|
+				csv.each do |linha|
+					@publicacoes_de_treino << Publicacao.new(linha, self)
+				end
+			end
+			criar_dicionario_de_termos
+		end
+
+		def criar_dicionario_de_termos
+			@dicionario_de_termos = @publicacoes_de_treino.map do |publicacao| 
+				publicacao.termos
+			end.flatten.uniq.sort
+		end
+
+		def classes
+			@publicacoes_de_treino.map { |publicacao| publicacao.linha_csv[6].to_i }
+		end
+
+		def vetores_de_treino
+			@publicacoes_de_treino.map { |publicacao| publicacao.vetor }
+		end
+	end
+\end{lstlisting}
+
+\section{Twitter}
+
+Classe utilizada para obter as publicações do Twitter.
+
+\begin{lstlisting}
+	require 'twitter'
+
+	class Twitter
+		def initialize
+			@cliente = Twitter::REST::Client.new do |config|
+			  config.consumer_key        = "DbT8fYWR2jq1TIXvxVtiZzFno"
+			  config.consumer_secret     = "3mT9JcwgaWs5gTJqOihbGAlRplHTKQapJMNQtnAWufYMVyUmle"
+			  config.access_token        = "42659961-4wDJCea7t1KVf1FMqUK5H2k2zgBaE26GpI5kjC3CK"
+			  config.access_token_secret = "OjhVszJ3Dyivaz0gGhHUuKn5N7cYqE0jUinoaFiWK7FjY"
+			end
+		end
+
+		def buscar data_limite, expressao, caminho_arquivo
+			data_publicacao = Time.now
+			id_maximo = nil
+
+			while publication_date > data_limite
+				publicacaoes = @cliente.search(expressao, lang: "pt", max_id: id_maximo).to_a
+				data_publicacao = publicacaoes.last.created_at
+				id_maximo = publicacoes.last[:id] - 1
+				CSV.open(caminho_arquivo, "a+") do |csv|
+					publicacoes.each do |publicacao| 
+						csv << [publicacao[:id], publicacao.created_at, publicacao.text, publicacao.geo.latitude, publicacao.geo.longitude, publicacao.user.location]
+					end
+				end
+			end
+		end
+	end
+\end{lstlisting}
+
+\section{String}
+
+Sobrecarga da classe String nativa do Ruby para manipulação das cidades e tokenização das publicações.
+
+\begin{lstlisting}
+	require 'json'
+
+	class String
+		JSON_CIDADES = JSON.parse(IO.read("support/cidades_do_brasil.json"))
+		ESTADOS_E_CIDADES = JSON_CIDADES.each_with_object({}) do |(k,v), h|
+			h[k.downcase] = v.downcase
+		end
+		LISTA_DE_CIDADES = ESTADOS_E_CIDADES.keys.sort_by { |c| c.length }.reverse
+		CIDADES_UNIDAS = LISTA_DE_CIDADES.map { |city| "(\\b#{city}\\b)" }.join("\|")
+		CIDADES_EXPREG = Regexp.new "#{CIDADES_UNIDAS}|\\s"
+		EXCECOES = [
+			"a", "e", "o", "de", "do", "da", "dos", "das", 
+			"os", "as", "se", "meu", "que", "teu", "ou", "eu",
+			"é", "à", "um", "uma", "uns", "umas", "RT"
+		]
+
+		def tokenizar
+			termos = self.downcase.split(CIDADES_EXPREG).map! { |termo| termo.gsub(/\p{^Alnum}\s/, '') }
+			termos.delete_if do |termo| 
+			  termo == "" || EXCECOES.include?(termo) || termo.include?("http") || 
+			  termo.include?("@") || termo.include?("kk") || termo.include?("haha")
+			end
+		end
+	end
+\end{lstlisting}
+
+\section{Modelo}
+
+Programa principal que realiza as chamadas na ordem (a obtenção das publicações com a classe Twitter é executada separadamente).
+
+\begin{lstlisting}
+	["classificador", "publicacao", "string", "treinador"].each do |file|
+		require "./lib/#{file}.rb"
+	end
+
+	classificador = Classificador.new
+	classificador.carregar_publicacoes_de_treino "support/publicacoes_de_treino.csv"
+	classificador.carregar_publicacoes "support/publicacoes.csv"
+	classificador.testar_modelo "support/publicacoes_classificadas.csv"
+\end{lstlisting}
